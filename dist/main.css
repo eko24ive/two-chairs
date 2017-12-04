@@ -1,6 +1,6 @@
 body {
   background-color: #263238;
-  color: #cfd8dc;
+  color: #fff;
   margin-top: 30px;
   font-family: "Roboto", sans-serif; }
 
@@ -54,15 +54,87 @@ body {
     font-weight: bold;
     padding: 15px 30px;
     font-size: 30px;
-    transition: all 0.5s linear; }
+    transition: all 0.5s linear;
+    text-decoration: none;
+    color: #fff; }
     .container-cta .cta-button img {
       position: relative;
       top: -3px; }
     .container-cta .cta-button:hover {
       background-color: #263238; }
 
+.item-description .decription-holder {
+  overflow: hidden;
+  position: relative; }
+  .item-description .decription-holder .full-height {
+    position: absolute;
+    left: 40%;
+    height: 85%; }
+
 .item-description .item-box-image {
   width: 100%; }
+
+.item-description .text-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; }
+  .item-description .text-holder p {
+    font-size: 18px; }
+
+.container-cards {
+  padding: 0 0 50px 0; }
+
+.huge-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0; }
+  .huge-cta .cta-button {
+    border-color: #ed1c24;
+    background: #313c42;
+    border-style: solid;
+    border-width: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+    font-size: 80px;
+    transition: all 0.15s linear;
+    text-decoration: none;
+    color: #fff; }
+    .huge-cta .cta-button img {
+      position: relative;
+      top: -7px; }
+    .huge-cta .cta-button:hover {
+      background-color: #ed1c24; }
+
+footer {
+  background-color: #bfc9ce;
+  color: #263238;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 25px 0; }
+  footer a {
+    color: #263238;
+    text-decoration: underline; }
+  footer .middle {
+    margin: 55px 0; }
+    footer .middle .cta {
+      border-color: #313c42;
+      background: #cfd8dc;
+      border-style: solid;
+      border-width: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 15px 40px;
+      font-size: 24px;
+      transition: all 0.15s linear;
+      text-decoration: none; }
+      footer .middle .cta:hover {
+        background-color: #bfc9ce;
+        color: #263238; }
 
 .divider {
   margin: 40px;

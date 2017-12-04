@@ -6,7 +6,7 @@ $red: #ed1c24;
 
 body {
   background-color: $dark;
-  color: $white;
+  color: #fff;
   margin-top: 30px;
   font-family: "Roboto", sans-serif;
 }
@@ -21,10 +21,7 @@ body {
 
   color: #fff;
   min-height: 200px;
-  // background-color: $white;
-  // color: $dark-grey;
-  // box-shadow: $box-shadow-offset $box-shadow-offset
-  //   calc(#{$box-shadow-offset} * 2) 0 $red;
+
   .text {
     min-height: 240px;
     display: block;
@@ -92,6 +89,8 @@ body {
     padding: 15px 30px;
     font-size: 30px;
     transition: all 0.5s linear;
+    text-decoration: none;
+    color: #fff;
 
     img {
       position: relative;
@@ -105,8 +104,124 @@ body {
 }
 
 .item-description {
+  .decription-holder {
+    overflow: hidden;
+    position: relative;
+
+    .full-height {
+      position: absolute;
+      left: 40%;
+      height: 85%;
+    }
+  }
+
   .item-box-image {
     width: 100%;
+  }
+
+  .text-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.container-cards {
+  padding: 0 0 50px 0;
+}
+
+// .container-cards {
+//   .card-row {
+//     $font-size: 27px;
+
+//     display: flex;
+//     justify-content: space-around;
+
+//     &:not(:first-child) {
+//       margin-top: 30px;
+//     }
+
+//     .card {
+//       span {
+//         font-size: $font-size;
+//       }
+
+//       .icon-image {
+//         width: calc(#{$font-size} * 1.53);
+//       }
+//     }
+//   }
+// }
+
+.huge-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+
+  .cta-button {
+    border-color: $red;
+    background: $dark-grey;
+    border-style: solid;
+    border-width: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+    font-size: 80px;
+    transition: all 0.15s linear;
+    text-decoration: none;
+    color: #fff;
+
+    img {
+      position: relative;
+      top: -7px;
+    }
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+footer {
+  background-color: $white-gray;
+  color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 25px 0;
+
+  a {
+    color: $dark;
+    text-decoration: underline;
+  }
+
+  .middle {
+    margin: 55px 0;
+
+    .cta {
+      border-color: $dark-grey;
+      background: $white;
+      border-style: solid;
+      border-width: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 15px 40px;
+      font-size: 24px;
+      transition: all 0.15s linear;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $white-gray;
+        color: $dark;
+      }
+    }
   }
 }
 

@@ -18,10 +18,9 @@
 
 <body>
   <div class="headline">
-    <img src="./img/logo.svg" alt="" height="120">
+    <img src="./img/logo.svg" class="tada animated" height="120">
   </div>
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="container container-cta">
     <div class="col-md-7">
       <div class="text">
@@ -33,11 +32,6 @@
       <a class="cta-button" href="#">Оформить <img src="./img/logo.svg" alt="" height="27"></a>
     </div>
     <div class="col-md-5">
-      <!-- <div class="cardholder">
-        <img class="top-image left" src="./img/blyacard-51.png" alt="">
-        <img class="top-image center" src="./img/blyacard-68.png" alt="">
-        <img class="top-image right" src="./img/blyacard-11.png" alt="">
-      </div> -->
       <img src="./img/box&card.png" class="item-box-image" alt="">
     </div>
   </div>
@@ -67,7 +61,6 @@
             своих друзей вместе с ними!
           </p>
         </div>
-        <!-- <button class="btn btn-default">Do smth</button> -->
       </div>
     </div>
   </div>
@@ -75,65 +68,40 @@
   <div class="divider"></div>
 
   <div class="huge-cta">
-    <a class="cta-button" href="#">Оформить <img src="./img/logo.svg" height="65"></a>
+    <a class="cta-button wow bounce" href="#">Оформить <img src="./img/logo.svg" height="65"></a>
   </div>
 
   <div class="divider"></div>
 
 
-  <!-- <div class="container container-cards">
-    <div class="card-row">
-      <div class="card">
-        <span><img src="./img/ico_delusion.svg" class="icon-image"> Она сломает ваш мозг !</span>
-      </div>
-      <div class="card">
-        <span><img src="./img/ico_swear.svg" class="icon-image"> С бранью веселей !</span>
-      </div>
-      <div class="card">
-        <span><img src="./img/ico_night.svg" class="icon-image"> Тренируйте восприятие !</span>
-      </div>
-    </div>
-
-    <div class="card-row">
-      <div class="card">
-        <span><img src="./img/ico_present.svg" class="icon-image"> Отличный оригинальный подарок !</span>
-      </div>
-      <div class="card">
-        <span><img src="./img/ico_drink.svg" class="icon-image"> Сделайте вечеринку необычной !</span>
-      </div>
-    </div>
-  </div> -->
-
   <div class="container container-cards">
     <div class="row">
-      <div class="col-md-6 col-md-offset-4">
+      <div class="col-md-6 col-md-offset-4 wow bounceInLeft">
         <h1><img src="./img/ico_delusion.svg" width="100" class="icon-image"> Она сломает ваш мозг !</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-md-offset-2">
+      <div class="col-md-6 col-md-offset-2 wow bounceInRight">
         <h1><img src="./img/ico_swear.svg" width="100" class="icon-image"> С бранью веселей !</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-md-offset-4">
+      <div class="col-md-6 col-md-offset-4 wow bounceInLeft">
         <h1><img src="./img/ico_night.svg" width="100" class="icon-image"> Тренируйте восприятие !</h1>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-8 col-md-offset-2 wow bounceInRight">
         <h1><img src="./img/ico_present.svg" width="100" class="icon-image"> Отличный оригинальный подарок !</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 col-md-offset-4">
+      <div class="col-md-8 col-md-offset-4 wow bounceInLeft">
         <h1><img src="./img/ico_drink.svg" width="100" class="icon-image"> Сделайте вечеринку необычной !</h1>
       </div>
     </div>
   </div>
-
-  <!-- <div class="divider"></div> -->
 
   <footer>
     <div class="top">
@@ -151,7 +119,10 @@
 
   </div>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

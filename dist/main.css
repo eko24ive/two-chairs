@@ -1,0 +1,77 @@
+body {
+  background-color: #263238;
+  color: #cfd8dc;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif; }
+
+.headline {
+  text-align: center;
+  margin-bottom: 60px; }
+
+.container-cta {
+  color: #fff;
+  min-height: 200px; }
+  .container-cta .text {
+    min-height: 240px;
+    display: block;
+    font-size: 24px; }
+  .container-cta .cardholder {
+    position: relative;
+    top: 20px;
+    right: 50px; }
+    .container-cta .cardholder .top-image {
+      position: absolute;
+      height: 11vw;
+      border-radius: 5px; }
+      .container-cta .cardholder .top-image.left {
+        animation: rotate 0.4s linear;
+        transform: rotate(5deg); }
+      .container-cta .cardholder .top-image.center {
+        z-index: 1; }
+      .container-cta .cardholder .top-image.right {
+        animation: minusRotate 0.4s linear;
+        transform: rotate(-5deg); }
+
+@keyframes rotate {
+  0% {
+    transform: none; }
+  100% {
+    transform: rotate(5deg); } }
+
+@keyframes minusRotate {
+  0% {
+    transform: none; }
+  100% {
+    transform: rotate(-5deg); } }
+  .container-cta .item-box-image {
+    width: 100%; }
+  .container-cta .cta-button {
+    border-color: #ed1c24;
+    background: #313c42;
+    border-style: solid;
+    border-width: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 30px;
+    transition: all 0.5s linear; }
+    .container-cta .cta-button img {
+      position: relative;
+      top: -3px; }
+    .container-cta .cta-button:hover {
+      background-color: #263238; }
+
+.item-description .item-box-image {
+  width: 100%; }
+
+.divider {
+  margin: 40px;
+  text-align: center;
+  justify-content: center;
+  display: flex; }
+  .divider:before {
+    content: "";
+    display: block;
+    background: #bfc9ce;
+    width: 50%;
+    height: 1px; }

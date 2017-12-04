@@ -1,0 +1,126 @@
+$dark: #263238;
+$dark-grey: #313c42;
+$white: #cfd8dc;
+$white-gray: #bfc9ce;
+$red: #ed1c24;
+
+body {
+  background-color: $dark;
+  color: $white;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.container-cta {
+  $box-shadow-offset: 5px;
+
+  color: #fff;
+  min-height: 200px;
+  // background-color: $white;
+  // color: $dark-grey;
+  // box-shadow: $box-shadow-offset $box-shadow-offset
+  //   calc(#{$box-shadow-offset} * 2) 0 $red;
+  .text {
+    min-height: 240px;
+    display: block;
+    font-size: 24px;
+  }
+
+  .cardholder {
+    position: relative;
+    top: 20px;
+    right: 50px;
+
+    .top-image {
+      $animation-type: linear;
+      $animation-duration: 0.4s;
+
+      position: absolute;
+      height: 11vw;
+      border-radius: 5px;
+
+      &.left {
+        animation: rotate $animation-duration $animation-type;
+        transform: rotate(5deg);
+      }
+
+      &.center {
+        z-index: 1;
+      }
+
+      &.right {
+        animation: minusRotate $animation-duration $animation-type;
+        transform: rotate(-5deg);
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: none;
+        }
+        100% {
+          transform: rotate(5deg);
+        }
+      }
+
+      @keyframes minusRotate {
+        0% {
+          transform: none;
+        }
+        100% {
+          transform: rotate(-5deg);
+        }
+      }
+    }
+  }
+
+  .item-box-image {
+    width: 100%;
+  }
+
+  .cta-button {
+    border-color: $red;
+    background: $dark-grey;
+    border-style: solid;
+    border-width: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+
+    img {
+      position: relative;
+      top: -3px;
+    }
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+}
+
+.item-description {
+  .item-box-image {
+    width: 100%;
+  }
+}
+
+.divider {
+  margin: 40px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+
+  &:before {
+    content: "";
+    display: block;
+    background: #bfc9ce;
+    width: 50%;
+    height: 1px;
+  }
+}

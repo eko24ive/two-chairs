@@ -4,6 +4,12 @@ $white: #cfd8dc;
 $white-gray: #bfc9ce;
 $red: #ed1c24;
 
+@mixin mobile {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 body {
   background-color: $dark;
   color: #fff;
@@ -92,6 +98,12 @@ body {
     text-decoration: none;
     color: #fff;
 
+    @include mobile {
+      display: block;
+      padding: 15px 7px;
+      font-size: 30px;
+    }
+
     img {
       position: relative;
       top: -3px;
@@ -99,6 +111,12 @@ body {
 
     &:hover {
       background-color: $dark;
+    }
+  }
+
+  .card-image {
+    @include mobile {
+      display: none;
     }
   }
 }
@@ -112,6 +130,12 @@ body {
       position: absolute;
       left: 40%;
       height: 85%;
+
+      @include mobile {
+        position: static;
+        left: auto;
+        height: auto;
+      }
     }
   }
 
@@ -177,6 +201,13 @@ body {
     text-decoration: none;
     color: #fff;
 
+    @include mobile {
+      display: block;
+      padding: 10px 20px;
+      font-size: 46px;
+      text-align: center;
+    }
+
     img {
       position: relative;
       top: -7px;
@@ -196,10 +227,17 @@ footer {
   align-items: center;
   font-size: 14px;
   padding: 25px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   a {
     color: $dark;
     text-decoration: underline;
+  }
+
+  .top {
+    text-align: center;
   }
 
   .middle {

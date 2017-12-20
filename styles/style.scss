@@ -160,29 +160,6 @@ body {
   padding: 0 0 50px 0;
 }
 
-// .container-cards {
-//   .card-row {
-//     $font-size: 27px;
-
-//     display: flex;
-//     justify-content: space-around;
-
-//     &:not(:first-child) {
-//       margin-top: 30px;
-//     }
-
-//     .card {
-//       span {
-//         font-size: $font-size;
-//       }
-
-//       .icon-image {
-//         width: calc(#{$font-size} * 1.53);
-//       }
-//     }
-//   }
-// }
-
 .huge-cta {
   display: flex;
   justify-content: center;
@@ -235,6 +212,9 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   a {
     color: $dark;
@@ -263,6 +243,24 @@ footer {
       &:hover {
         background-color: $white-gray;
         color: $dark;
+      }
+    }
+  }
+
+  .social {
+    ol {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+        margin: 4px;
+
+        a.social-button {
+          padding: 0.25em;
+          width: calc(0.5em * 3);
+          height: calc(0.5em * 3);
+        }
       }
     }
   }

@@ -57,11 +57,20 @@ body {
     transition: all 0.5s linear;
     text-decoration: none;
     color: #fff; }
+    @media only screen and (max-width: 768px) {
+      .container-cta .cta-button {
+        display: block;
+        padding: 15px 7px;
+        font-size: 30px;
+        text-align: center; } }
     .container-cta .cta-button img {
       position: relative;
       top: -3px; }
     .container-cta .cta-button:hover {
       background-color: #263238; }
+  @media only screen and (max-width: 768px) {
+    .container-cta .card-image {
+      display: none; } }
 
 .item-description .decription-holder {
   overflow: hidden;
@@ -70,6 +79,11 @@ body {
     position: absolute;
     left: 40%;
     height: 85%; }
+    @media only screen and (max-width: 768px) {
+      .item-description .decription-holder .full-height {
+        position: static;
+        left: auto;
+        height: auto; } }
 
 .item-description .item-box-image {
   width: 100%; }
@@ -90,6 +104,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px 0; }
+  @media only screen and (max-width: 768px) {
+    .huge-cta {
+      padding: 0; } }
   .huge-cta .cta-button {
     border-color: #ed1c24;
     background: #313c42;
@@ -102,6 +119,12 @@ body {
     transition: all 0.15s linear;
     text-decoration: none;
     color: #fff; }
+    @media only screen and (max-width: 768px) {
+      .huge-cta .cta-button {
+        display: block;
+        padding: 10px 20px;
+        font-size: 46px;
+        text-align: center; } }
     .huge-cta .cta-button img {
       position: relative;
       top: -7px; }
@@ -115,10 +138,18 @@ footer {
   flex-direction: column;
   align-items: center;
   font-size: 14px;
-  padding: 25px 0; }
+  padding: 25px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  position: absolute;
+  left: 0;
+  right: 0; }
   footer a {
     color: #263238;
     text-decoration: underline; }
+  footer .top {
+    text-align: center; }
   footer .middle {
     margin: 55px 0; }
     footer .middle .cta {
@@ -135,6 +166,17 @@ footer {
       footer .middle .cta:hover {
         background-color: #bfc9ce;
         color: #263238; }
+  footer .social ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    footer .social ol li {
+      display: inline-block;
+      margin: 4px; }
+      footer .social ol li a.social-button {
+        padding: 0.25em;
+        width: calc(0.5em * 3);
+        height: calc(0.5em * 3); }
 
 .divider {
   margin: 40px;
